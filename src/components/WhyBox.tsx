@@ -4,7 +4,7 @@ import TwentyDots from '../assets/TwentyDots.svg';
 
 export function WhyBox(props: { title: string, reason: string, description: string, items: any }) {
   return (
-    <Box bgcolor={"#393953"} borderRadius={"40px"}>
+    <Box bgcolor={"#393953"} borderRadius={"40px"} width={'1090px'} height={'513px'} marginX={'20px'}>
       <Typography variant='h6' color='text.primary'>
         {props.title}
       </Typography>

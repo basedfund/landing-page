@@ -73,25 +73,26 @@ let sirTheme = createTheme({
   },
   typography: {
     h1: {
-      fontSize: '44px', // unused
-      lineHeight: '46px', // unused
-      fontFamily: 'FreightBig,Serif,Arial,Sans-Serif', // unused
-      letterSpacing: '0', // unused
+      fontFamily: 'Spartan',
+      fontSize: '60px',
+      fontWeight: '700',
+      lineHeight: '76px',
+      letterSpacing: '0',
       '@media (min-width: 768px)': { // unused
         fontSize: '50px', // unused
         lineHeight: '54px' // unused
-      }, // unused
+      },
       '@media (min-width: 1280px)': { // unused
         fontSize: '72px', // unused
         lineHeight: '72px' // unused
-      } // unused
+      }
     },
     h2: {
-      fontFamily: 'FreightBig,Serif,Arial,Sans-Serif', // unused
-      fontSize: '38px', // unused
-      fontWeight: 400, // unused
-      lineHeight: '44px', // unused
-      letterSpacing: '.8px', // unused
+      fontFamily: 'Spartan',
+      fontSize: '40px',
+      fontWeight: '700',
+      lineHeight: '48px',
+      letterSpacing: '-0.022em',
       '@media (min-width: 1280px)': { // unused
         fontSize: '46px', // unused
         lineHeight: '52px', // unused
@@ -99,11 +100,11 @@ let sirTheme = createTheme({
       } // unused
     },
     h3: {
-      fontFamily: 'FreightBig, Serif, Arial, Sans-Serif', // unused
-      fontSize: '30px', // unused
-      fontWeight: '400', // unused
-      lineHeight: '34px', // unused
-      letterSpacing: '1px', // unused
+      fontFamily: 'Spartan',
+      fontSize: '30px',
+      fontWeight: '800',
+      lineHeight: '38px',
+      letterSpacing: '0em',
       '@media (min-width: 768px)': { // unused
         fontSize: '32px', // unused
         lineHeight: '40px', // unused
@@ -122,22 +123,22 @@ let sirTheme = createTheme({
       } // unused
     },
     h5: {
-      fontFamily: 'Mercury,Arial,Sans-Serif', // unused
-      fontSize: '20px', // unused
-      fontWeight: 400, // unused
-      lineHeight: '24px', // unused
-      letterSpacing: 0, // unused
+      fontFamily: 'Space Mono',
+      fontSize: '20px',
+      fontWeight: '400',
+      lineHeight: '32px',
+      letterSpacing: '0em',
       '@media (min-width: 768px)': { // unused
         fontSize: '22px', // unused
         lineHeight: '28px' // unused
       } // unused
     },
     h6: {
-      fontFamily: 'Mercury,Arial,Sans-Serif', // unused
-      fontSize: '18px', // unused
-      fontWeight: 400, // unused
-      lineHeight: '24px', // unused
-      letterSpacing: 0 // unused
+      fontFamily: 'Spinnaker',
+      fontSize: '16px',
+      fontWeight: '400',
+      lineHeight: '27px',
+      letterSpacing: '0em'
     },
     body1: {
       fontFamily: 'Space Mono', // unused
@@ -145,6 +146,21 @@ let sirTheme = createTheme({
       fontWeight: 400, // unused
       lineHeight: '24px', // unused
       letterSpacing: 0 // unused
+    },
+    body2: {
+      fontFamily: 'Space Mono',
+      fontSize: '18px',
+      fontWeight: '400',
+      lineHeight: '24px',
+      letterSpacing: '0em'
+    },
+    subtitle1: {
+      fontFamily: 'Spartan',
+      fontSize: '14px',
+      fontWeight: '600',
+      lineHeight: '27px',
+      letterSpacing: '0px',
+      textAlign: 'center'
     }
   },
   components: {
