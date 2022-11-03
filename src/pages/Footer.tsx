@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Stack, Button, Typography } from '@mui/material';
 import BedRockLogo from '../assets/BedRockLogo.svg';
+import RightArrow from '../components/svg/RightArrow';
 
 export function Footer() {  
   return (
@@ -10,8 +11,8 @@ export function Footer() {
         Learn more
         Deep dive into bedrocks functionality and glossary
         <Box>
-          <Button>Tutorials</Button>
-          <Button>Key concepts</Button>
+          <Button endIcon={<RightArrow />}>Tutorials</Button>
+          <Button endIcon={<RightArrow />}>Key concepts</Button>
         </Box>
       </Box>
       <Box>

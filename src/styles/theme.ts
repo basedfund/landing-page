@@ -159,8 +159,7 @@ let sirTheme = createTheme({
       fontSize: '14px',
       fontWeight: '600',
       lineHeight: '27px',
-      letterSpacing: '0px',
-      textAlign: 'center'
+      letterSpacing: '0px'
     }
   },
   components: {
