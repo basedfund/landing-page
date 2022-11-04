@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stoke&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 .App {
   text-align: center;
-  background-image: url('assets/VectorGroup.svg');
+  background-image: url('assets/images/BGCurveGroup.svg');
 }
 
 .App-logo {

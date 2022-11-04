@@ -1,0 +1,48 @@
+.root {
+  border-radius: 40px;
+  width: 1000px;
+  height: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.dot1 {
+  left: -30px;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+
+.dot2 {
+  right: -30px;
+  top: -30px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+
+@media (max-width: 1025px) {
+  .root {
+    border-radius: 20px;
+    width: 350px;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .dot1 {
+    left: -20px;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+  .dot2 {
+    right: -20px;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+}
+

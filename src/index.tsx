@@ -5,16 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from '@emotion/react';
 import theme from './styles/theme';
+import { StyledEngineProvider } from '@mui/material';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  // <React.StrictMode>
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </StyledEngineProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

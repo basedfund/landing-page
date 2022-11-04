@@ -23,15 +23,15 @@ export function StepCard({ id, title, description, rotation, top }: StepCardProp
         top={top}
         position='relative'
       >
-        <Typography variant='h1' color='text.primary' marginTop='10px'>
+        <Typography variant='h1' fontFamily='Stoke' color='text.primary' marginTop='10px'>
           {id}
         </Typography>
         <Typography variant='h4' color='text.primary' fontStyle='bold' marginTop='40px'>
           {title}
         </Typography>
         <Typography variant='h6' color='text.primary' fontStyle='light' marginTop='20px'>
-          {description.map(sentence => (
-            <span>{sentence}<br /><br /></span>
+          {description.map((sentence, id) => (
+            <span key={id}>{sentence}<br /><br /></span>
           ))}
         </Typography>
       </Box>

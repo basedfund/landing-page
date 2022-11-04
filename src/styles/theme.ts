@@ -74,92 +74,120 @@ let sirTheme = createTheme({
   typography: {
     h1: {
       fontFamily: 'Spartan',
-      fontSize: '60px',
       fontWeight: '700',
-      lineHeight: '76px',
       letterSpacing: '0',
-      '@media (min-width: 768px)': { // unused
-        fontSize: '50px', // unused
-        lineHeight: '54px' // unused
+      lineHeight: '125%',
+      fontSize: '60px',
+      '@media (max-width: 768px)': {
+        fontSize: '40px',
       },
-      '@media (min-width: 1280px)': { // unused
-        fontSize: '72px', // unused
-        lineHeight: '72px' // unused
+      '@media (min-width: 1280px)': {
+        fontSize: '72px'
       }
     },
     h2: {
       fontFamily: 'Spartan',
-      fontSize: '40px',
       fontWeight: '700',
-      lineHeight: '48px',
-      letterSpacing: '-0.022em',
-      '@media (min-width: 1280px)': { // unused
-        fontSize: '46px', // unused
-        lineHeight: '52px', // unused
-        letterSpacing: '1px' // unused
-      } // unused
+      letterSpacing: '0',
+      lineHeight: '125%',
+      fontSize: '40px',
+      '@media (max-width: 768px)': {
+        fontSize: '28px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '50px'
+      }
     },
     h3: {
       fontFamily: 'Spartan',
+      fontWeight: '700',
+      letterSpacing: '0',
+      lineHeight: '125%',
       fontSize: '30px',
-      fontWeight: '800',
-      lineHeight: '38px',
-      letterSpacing: '0em',
-      '@media (min-width: 768px)': { // unused
-        fontSize: '32px', // unused
-        lineHeight: '40px', // unused
-        letterSpacing: '1px' // unused
-      } // unused
+      '@media (max-width: 768px)': {
+        fontSize: '20px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '36px'
+      }
     },
     h4: {
-      fontFamily: 'Mercury,Arial,Sans-Serif', // unused
-      fontSize: '24px', // unused
-      fontWeight: 400, // unused
-      lineHeight: '32px', // unused
-      letterSpacing: 0, // unused
-      '@media (min-width: 768px)': { // unused
-        fontSize: '28px', // unused
-        lineHeight: '34px' // unused
-      } // unused
+      fontFamily: 'Spartan',
+      fontWeight: '700',
+      letterSpacing: '0',
+      lineHeight: '125%',
+      fontSize: '24px',
+      '@media (max-width: 768px)': {
+        fontSize: '18px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '28px'
+      }
     },
     h5: {
-      fontFamily: 'Space Mono',
+      fontFamily: 'Spartan',
+      fontWeight: '700',
+      letterSpacing: '0',
+      lineHeight: '125%',
       fontSize: '20px',
-      fontWeight: '400',
-      lineHeight: '32px',
-      letterSpacing: '0em',
-      '@media (min-width: 768px)': { // unused
-        fontSize: '22px', // unused
-        lineHeight: '28px' // unused
-      } // unused
+      '@media (max-width: 768px)': {
+        fontSize: '16px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '23px'
+      }
     },
     h6: {
-      fontFamily: 'Spinnaker',
-      fontSize: '16px',
-      fontWeight: '400',
-      lineHeight: '27px',
-      letterSpacing: '0em'
-    },
-    body1: {
-      fontFamily: 'Space Mono', // unused
-      fontSize: '16px', // unused
-      fontWeight: 400, // unused
-      lineHeight: '24px', // unused
-      letterSpacing: 0 // unused
-    },
-    body2: {
-      fontFamily: 'Space Mono',
+      fontFamily: 'Spartan',
+      fontWeight: '700',
+      letterSpacing: '0',
+      lineHeight: '125%',
       fontSize: '18px',
-      fontWeight: '400',
-      lineHeight: '24px',
-      letterSpacing: '0em'
+      '@media (max-width: 768px)': {
+        fontSize: '15px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '20px'
+      }
     },
     subtitle1: {
       fontFamily: 'Spartan',
+      fontWeight: '700',
+      letterSpacing: '0',
+      lineHeight: '125%',
+      fontSize: '16px',
+      '@media (max-width: 768px)': {
+        fontSize: '14px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '18px'
+      }
+    },
+    subtitle2: {
+      fontFamily: 'Spartan',
+      fontWeight: '700',
+      letterSpacing: '0',
+      lineHeight: '125%',
+      fontSize: '16px',
+      '@media (max-width: 768px)': {
+        fontSize: '14px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '18px'
+      }
+    },
+    body1: {
+      fontFamily: 'Spartan',
+      fontWeight: '700',
+      letterSpacing: '0',
+      lineHeight: '125%',
       fontSize: '14px',
-      fontWeight: '600',
-      lineHeight: '27px',
-      letterSpacing: '0px'
+      '@media (max-width: 768px)': {
+        fontSize: '12px',
+      },
+      '@media (min-width: 1280px)': {
+        fontSize: '16px'
+      }
     }
   },
   components: {

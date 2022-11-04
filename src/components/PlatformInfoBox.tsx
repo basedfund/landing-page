@@ -1,14 +1,19 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-export function PlatformInfoBox(props: { value: string, suffix: string }) {
+type PlatformInfoBoxProps = {
+  value: string,
+  suffix: string
+};
+
+export function PlatformInfoBox({ value, suffix }: PlatformInfoBoxProps) {
   return (
-    <Box marginX={'50px'}>
+    <Box sx={{marginX: {xs: '10px', sm: '50px'}, marginBottom: '20px'}}>
       <Typography variant='h5' color='text.primary'>
-        {props.value}
+        {value}
       </Typography>
-      <Typography variant='body2' color='secondary'>
-        {props.suffix}
+      <Typography variant='body2' color='secondary' paddingTop='6px'>
+        {suffix}
       </Typography>
     </Box>
   );

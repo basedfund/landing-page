@@ -1,4 +1,4 @@
 export * from './PlatformInfoBox';
 export * from './StepCard';
 export * from './WalletConnectButton';
-export * from './WhyBox';
+export * from './WhyBox/WhyBox';
