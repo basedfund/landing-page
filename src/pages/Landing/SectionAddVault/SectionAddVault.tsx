@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import RightArrow from '../../components/svg/RightArrow';
+import RightArrow from '../../../components/svg/RightArrow';
 
 export function SectionAddVault() {
   return (
@@ -9,7 +9,7 @@ export function SectionAddVault() {
       borderRadius='16px'
       marginX='auto'
       marginBottom='80px'
-      width='80%'
+      sx={{width: {xs: '80%', md: '70%'}, paddingX: '5%'}}
       style={{ background: 'linear-gradient(325.79deg, #4BAAA1 24.5%, #33766F 117.69%)' }}
     >
       <Typography variant='body2' color='text.primary' paddingTop='20px'>

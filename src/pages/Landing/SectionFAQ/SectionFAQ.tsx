@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import { getFAQs } from '../../api';
-import SvgPlus from '../../assets/images/plus.svg';
-import SvgOval from '../../assets/images/Oval.svg';
+import { getFAQs } from '../../../api';
+import SvgPlus from '../../../assets/images/plus.svg';
+import SvgOval from '../../../assets/images/Oval.svg';
+import styles from './SectionFAQ.module.css';
 
 export function SectionFAQ() {
   const [faqs, setFaqs] = useState<{ question: string, answer: string }[]>([]);
@@ -17,12 +18,12 @@ export function SectionFAQ() {
         <Typography variant='h2' color='text.primary'>
           Frequently asked questions
         </Typography>
-        <img src={SvgOval} style={{ position: 'absolute', right: '0', bottom: '-5px' }} />
+        <img src={SvgOval} className={styles.oval} />
       </Box>
       <Typography variant='subtitle1' color='secondary.main' fontStyle='SemiBold'>
         browse our faq's below, if you can not find the answer to you're looking for please contact us.
       </Typography>
-      <Box maxWidth='808px' marginX='auto' marginY='80px' borderTop='1px solid #393953'>
+      <Box sx={{ maxWidth: { xs: '95%', md: '800px' } }} marginX='auto' marginY='80px' borderTop='1px solid #393953'>
         {faqs.map((faq, id) => (
           <Stack key={id} direction="row" alignItems="center" justifyContent="space-between" paddingY='20px' borderBottom='1px solid #393953'>
             <Typography variant='body2' color='text.primary' letterSpacing='-0.014em' textAlign='left'>

@@ -2,12 +2,11 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { SectionTop } from './SectionTop/SectionTop';
 import { SectionSlides } from './SectionSlides';
-import { SectionLearn } from './SectionLearn';
-import { SectionAddVault } from './SectionAddVault';
-import { SectionFAQ } from './SectionFAQ';
-import { SectionProtectDai } from './SectionProtectDai';
-import { SectionGetProtect } from './SectionGetProtect';
-import { SectionSteps } from './SectionSteps';
+import { SectionLearn } from './SectionLearn/SectionLearn';
+import { SectionAddVault } from './SectionAddVault/SectionAddVault';
+import { SectionFAQ } from './SectionFAQ/SectionFAQ';
+import { SectionProtect } from './SectionProtect/SectionProtect';
+import { SectionSteps } from './SectionSteps/SectionSteps';
 
 export function Landing() {
   return (
@@ -18,8 +17,7 @@ export function Landing() {
         <SectionSteps />
       </Box>
 
-      <SectionGetProtect />
-      <SectionProtectDai />
+      <SectionProtect />
       <SectionFAQ />
       <SectionAddVault />
       <SectionLearn />

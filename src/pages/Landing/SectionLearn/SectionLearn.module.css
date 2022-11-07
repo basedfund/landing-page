@@ -1,0 +1,19 @@
+.learnButton {
+  background-color: #ffffff;
+  color: #1E266D;
+  text-transform: none;
+  width: 200px;
+  height: 80px;
+  border-radius: 15px;
+  font-style: Bold;
+  margin: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .learnButton {
+    width: 150px;
+    margin: 5px;
+    font-size: 14px;
+  }
+}

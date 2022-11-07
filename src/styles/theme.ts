@@ -81,7 +81,7 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '40px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '72px'
       }
     },
@@ -94,7 +94,7 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '28px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '50px'
       }
     },
@@ -107,7 +107,7 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '20px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '36px'
       }
     },
@@ -120,7 +120,7 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '18px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '28px'
       }
     },
@@ -133,7 +133,7 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '16px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '23px'
       }
     },
@@ -146,20 +146,20 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '15px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '20px'
       }
     },
     subtitle1: {
-      fontFamily: 'Spartan',
-      fontWeight: '700',
+      fontFamily: 'Spinnaker',
+      fontWeight: '400',
       letterSpacing: '0',
-      lineHeight: '125%',
+      lineHeight: '168%',
       fontSize: '16px',
       '@media (max-width: 768px)': {
         fontSize: '14px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '18px'
       }
     },
@@ -172,7 +172,7 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '14px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '18px'
       }
     },
@@ -185,7 +185,7 @@ let sirTheme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '12px',
       },
-      '@media (min-width: 1280px)': {
+      '@media (min-width: 1536px)': {
         fontSize: '16px'
       }
     }

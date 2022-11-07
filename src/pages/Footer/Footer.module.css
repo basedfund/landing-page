@@ -1,0 +1,29 @@
+.root {
+  width: 85%;
+  margin: -100px auto 20px auto;
+  border-radius: 40px;
+  background-color: #4AA79E;
+  position: relative;
+  border: 7px solid #ffffff;
+  overflow: hidden;
+}
+
+.linkPanel {
+  text-align: left;
+  margin: 100px auto 100px auto;
+  width: 85%;
+}
+
+@media (max-width: 1025px) {
+  .root {
+    width: 90%;
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+    padding: 5px;
+  }
+  .linkPanel {
+    margin: 50px auto 50px auto;
+    width: 100%;
+    padding: 5px;
+  }
+}

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import SvgCurve3 from '../../assets/images/curve3.svg';
-import SvgMaskGroup from '../../assets/images/MaskGroup.svg';
-import RightArrow from '../../components/svg/RightArrow';
+import SvgCurve3 from '../../../assets/images/curve3.svg';
+import SvgMaskGroup from '../../../assets/images/MaskGroup.svg';
+import RightArrow from '../../../components/svg/RightArrow';
+import styles from './SectionLearn.module.css';
 
 export function SectionLearn() {
   return (
@@ -17,20 +18,20 @@ export function SectionLearn() {
         </Typography>
         <img src={SvgCurve3} style={{ position: 'absolute', right: '0', bottom: '-10px' }} />
       </Box>
-      <Typography variant='h6' color='#D3D5DA'>
+      <Typography variant='h6' color='#D3D5DA' paddingX='5px'>
         Deep dive into bedrocks functionality and glossary
       </Typography>
       <Box marginY='20px'>
         <Button
           variant='contained'
-          sx={{ bgcolor: '#ffffff', color: '#1E266D', textTransform: 'none', width: '150px', paddingY: '15px', borderRadius: '15px', fontStyle: 'Bold', marginX: '10px' }}
+          className={styles.learnButton}
           endIcon={<RightArrow />}
         >
           Tutorials
         </Button>
         <Button
           variant='contained'
-          sx={{ bgcolor: '#ffffff', color: '#1E266D', textTransform: 'none', width: '150px', paddingY: '15px', borderRadius: '15px', fontStyle: 'Bold', marginX: '10px' }}
+          className={styles.learnButton}
           endIcon={<RightArrow />}
         >
           Key concepts

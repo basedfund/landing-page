@@ -5,7 +5,7 @@ import SvgCurve4 from '../../assets/images/curve4.svg';
 export function SectionCommunity() {
   return (
     <Box position='relative' width='fit-content' marginX='auto'>
-      <Typography variant='h4' color='text.primary' sx={{ opacity: '50%', paddingTop: '75px' }}>
+      <Typography variant='h4' color='text.primary' sx={{ opacity: '50%', paddingTop: {xs: '30px', md: '75px'} }}>
         Community
       </Typography>
       <Box position='relative' width='fit-content' marginX='auto' marginY='30px'>

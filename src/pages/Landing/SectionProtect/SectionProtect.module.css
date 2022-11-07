@@ -1,0 +1,41 @@
+.protectDai {
+  background-color: #3D4559;
+  border-radius: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 550px;
+  position: relative;
+}
+
+.daiIcon {
+  border-radius: 50%;
+  background-color: #F5AC37;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  position: absolute;
+  left: 50px;
+  top: -70px;
+}
+
+@media (max-width: 768px) {
+  .protectDai {
+    background-color: #3D4559;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 550px;
+    position: relative;
+  }
+
+  .daiIcon {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    left: 15px;
+    top: -40px;
+  }
+}
