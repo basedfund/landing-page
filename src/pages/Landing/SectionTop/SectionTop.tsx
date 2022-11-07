@@ -20,7 +20,7 @@ export function SectionTop() {
         <Typography className={styles.title} variant='h1' color='text.primary'>
           Protect your DeFi assets
         </Typography>
-        <img src={SvgCurve1} style={{ position: 'absolute', right: '0px', bottom: '-15px' }} />
+        <img className={styles.downCurve} src={SvgCurve1} />
       </Box>
       <Typography className={styles.intro} variant='subtitle1' color='text.secondary'>
         Deposit your stablecoins to protect your capital against key risks like smart contract hacks or price depeg.
@@ -35,16 +35,16 @@ export function SectionTop() {
       </Box>
       <Stack className={styles.statusGroup}>
         <StatusBox value={safeCnt.toString()} suffix='stablecoins covered' />
-        <StatusBox value={'automated'} suffix='claims process' />
-        <StatusBox value={'-'} suffix='Currently being audited' />
+        <StatusBox value='automated' suffix='claims process' />
+        <StatusBox value='-' suffix='Currently being audited' />
       </Stack>
 
       <Box className={styles.advantageBox} >
         <img src={SvgArrow1} />
-        <Typography variant='h3' color='text.primary' fontStyle='ExtraBold' marginY='10px'>
+        <Typography variant='h3' color='text.primary' className={styles.reasonTitle}>
           Why choose us?
         </Typography>
-        <Typography variant='body2' color='secondary' fontStyle='Medium' fontWeight='400'>
+        <Typography variant='body2' color='secondary'>
           Bedrock was founded by combination of insurance professionals, former smart contract auditors and technologist passionate about growing DeFi securely.
         </Typography>
       </Box>

@@ -188,6 +188,19 @@ let sirTheme = createTheme({
       '@media (min-width: 1536px)': {
         fontSize: '16px'
       }
+    },
+    body2: {
+      fontFamily: 'Spartan',
+      fontWeight: '500',
+      letterSpacing: '0',
+      lineHeight: '125%',
+      fontSize: '18px',
+      '@media (max-width: 768px)': {
+        fontSize: '15px',
+      },
+      '@media (min-width: 1536px)': {
+        fontSize: '20px'
+      }
     }
   },
   components: {

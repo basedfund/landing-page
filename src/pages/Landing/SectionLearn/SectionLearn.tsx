@@ -7,31 +7,31 @@ import styles from './SectionLearn.module.css';
 
 export function SectionLearn() {
   return (
-    <Box width='85%' marginX='auto' borderRadius='40px' height='600px' position='relative' bgcolor='#3D4559' zIndex='-1' overflow='hidden'>
-      <img src={SvgMaskGroup} style={{ position: 'absolute', left: '0', top: '0', width: '100%' }} />
-      <Typography variant='h4' color='text.primary' sx={{ opacity: '50%', paddingTop: '75px' }}>
+    <Box className={styles.root}>
+      <img className={styles.bgImg} src={SvgMaskGroup} />
+      <Typography className={styles.title} variant='h4' color='text.primary'>
         Learn
       </Typography>
-      <Box position='relative' width='fit-content' marginX='auto' marginY='30px'>
-        <Typography variant='h2' color='text.primary'>
+      <Box className={styles.header}>
+        <Typography className={styles.headerText} variant='h2' color='text.primary'>
           Learn more
         </Typography>
-        <img src={SvgCurve3} style={{ position: 'absolute', right: '0', bottom: '-10px' }} />
+        <img className={styles.headerCurve} src={SvgCurve3} />
       </Box>
-      <Typography variant='h6' color='#D3D5DA' paddingX='5px'>
+      <Typography className={styles.description} variant='subtitle2'>
         Deep dive into bedrocks functionality and glossary
       </Typography>
-      <Box marginY='20px'>
+      <Box>
         <Button
-          variant='contained'
           className={styles.learnButton}
+          variant='contained'
           endIcon={<RightArrow />}
         >
           Tutorials
         </Button>
         <Button
-          variant='contained'
           className={styles.learnButton}
+          variant='contained'
           endIcon={<RightArrow />}
         >
           Key concepts

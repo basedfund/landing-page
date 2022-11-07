@@ -1,7 +1,61 @@
+.root {
+  margin-top: 160px;
+}
+
+.title {
+  position: relative;
+  width: fit-content;
+  margin: 20px auto;
+  letter-spacing: -0.022em;
+}
+
+.description {
+  font-weight: 600;
+  text-transform: lowercase;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .oval {
   position: absolute;
   right: 0;
   bottom: -5px;
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 80px auto;
+  border-top: 1px solid #393953
+}
+
+.faqRow {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #393953;
+}
+
+.question {
+  letter-spacing: -0.014em;
+  text-align: left;
+}
+
+@media (max-width: 1025px) {
+  .root {
+    margin-top: 80px;
+  }
+
+  .faqList {
+    max-width: 95%;
+    margin: 40px auto;
+  }
+
+  .faqRow {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -1,21 +1,22 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import { WhyBox } from '../../../components';
+import { WhyBox } from './WhyBox/WhyBox';
 import SvgCaesarzkn1 from '../../../assets/images/Caesarzkn1.svg';
 import SvgCaesarzkn2 from '../../../assets/images/Caesarzkn2.svg';
 import SvgCaesarzkn3 from '../../../assets/images/Caesarzkn3.svg';
+import styles from './SectionSlides.module.css';
 
 export function Slide2TheProblem() {
   function itemBox(icon: any, iconColor: string, tokenName: string, hackedAmount: string) {
     return (
-      <Box bgcolor='#4F4C64' height='70px' marginY='10px' borderRadius='8px' display='flex' alignItems='center' position='relative'>
-        <Box borderRadius='50%' bgcolor={iconColor} width='35px' height='35px' display='flex' justifyContent='center' alignItems='center' margin='15px'>
-          <img src={icon} width='40%' height='40%' />
+      <Box className={styles.slide1Container}>
+        <Box className={styles.slide1IconBox} bgcolor={iconColor}>
+          <img className={styles.slide1IconImg} src={icon} />
         </Box>
-        <Typography fontSize='12px' fontFamily='Poppins' color='#ffffff'>
+        <Typography className={styles.slide1TokenName}>
           {tokenName}
         </Typography>
-        <Typography position='absolute' right='20px' fontSize='12px' fontFamily='Poppins' color='#ffffff'>
+        <Typography className={styles.slide2HackedAmount}>
           {hackedAmount}
         </Typography>
       </Box>
@@ -25,9 +26,9 @@ export function Slide2TheProblem() {
   return (
     <Box>
       <WhyBox
-        title={"The Problem"}
-        reason={"Stablecoins aren't stable"}
-        description={"Existing DeFi insurance solutions mimic traditional institutions. None are equipped to protect and compensate DeFi users and protocols across Web3."}
+        title='The Problem'
+        reason="Stablecoins aren't stable"
+        description='Existing DeFi insurance solutions mimic traditional institutions. None are equipped to protect and compensate DeFi users and protocols across Web3.'
         titleColor='#FFB700'
         rightBgColor='#171A3173'
         items={[

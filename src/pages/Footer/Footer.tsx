@@ -8,8 +8,7 @@ import styles from './Footer.module.css';
 export function Footer() {
   return (
     <Box className={styles.root}>
-      <img src={SvgMaskGroup2} style={{ position: 'absolute', left: '0', top: '0', width: '100%' }} />
-
+      <img className={styles.bgImg} src={SvgMaskGroup2} />
       <SectionCommunity />
       <SectionLinks />
     </Box>

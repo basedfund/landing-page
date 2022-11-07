@@ -13,20 +13,20 @@ export function SectionFAQ() {
   }, []);
 
   return (
-    <Box marginTop='160px'>
-      <Box position='relative' width='fit-content' marginX='auto' marginY='20px'>
+    <Box className={styles.root}>
+      <Box className={styles.title}>
         <Typography variant='h2' color='text.primary'>
           Frequently asked questions
         </Typography>
-        <img src={SvgOval} className={styles.oval} />
+        <img className={styles.oval} src={SvgOval} />
       </Box>
-      <Typography variant='subtitle1' color='secondary.main' fontStyle='SemiBold'>
+      <Typography className={styles.description} variant='body1' color='secondary.main'>
         browse our faq's below, if you can not find the answer to you're looking for please contact us.
       </Typography>
-      <Box sx={{ maxWidth: { xs: '95%', md: '800px' } }} marginX='auto' marginY='80px' borderTop='1px solid #393953'>
+      <Box className={styles.faqList}>
         {faqs.map((faq, id) => (
-          <Stack key={id} direction="row" alignItems="center" justifyContent="space-between" paddingY='20px' borderBottom='1px solid #393953'>
-            <Typography variant='body2' color='text.primary' letterSpacing='-0.014em' textAlign='left'>
+          <Stack className={styles.faqRow} key={id} direction='row'>
+            <Typography className={styles.question} variant='body2' color='text.primary'>
               {faq.question}
             </Typography>
             <img src={SvgPlus} />
