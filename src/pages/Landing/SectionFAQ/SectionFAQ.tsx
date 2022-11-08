@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Accordion, AccordionDetails, AccordionSummary, Box, Stack, Typography } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from '@mui/material';
 import { getFAQs } from '../../../api';
 import SvgPlus from '../../../assets/images/plus.svg';
 import SvgMinus from '../../../assets/images/minus.svg';

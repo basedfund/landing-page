@@ -28,6 +28,10 @@
   border-radius: 8px;
 }
 
+.button:hover {
+  background-color: #eeeeee !important;
+}
+
 @media (max-width: 1025px) {
   .root {
     width: 80%;

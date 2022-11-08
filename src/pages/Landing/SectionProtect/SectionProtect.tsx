@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import SvgDAI from '../../../assets/images/DAI.svg';
 import SvgSparkle from '../../../assets/images/Sparkle.svg';
 import RightArrow from '../../../components/svg/RightArrow';
