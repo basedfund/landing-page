@@ -6,6 +6,7 @@
   position: relative;
   border: 7px solid #ffffff;
   overflow: hidden;
+  z-index: 1;
 }
 
 .bgImg {
@@ -13,6 +14,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .linkPanel {

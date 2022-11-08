@@ -7,18 +7,21 @@ import { SectionAddVault } from './SectionAddVault/SectionAddVault';
 import { SectionFAQ } from './SectionFAQ/SectionFAQ';
 import { SectionProtect } from './SectionProtect/SectionProtect';
 import { SectionSteps } from './SectionSteps/SectionSteps';
+import styles from './Landing.module.css';
 
 export function Landing() {
   return (
     <Box>
-      <Box>
+      <Box className={styles.container1}>
         <SectionTop />
         <SectionSlides />
         <SectionSteps />
       </Box>
 
-      <SectionProtect />
-      <SectionFAQ />
+      <Box className={styles.container2}>
+        <SectionProtect />
+        <SectionFAQ />
+      </Box>
       <SectionAddVault />
       <SectionLearn />
     </Box>

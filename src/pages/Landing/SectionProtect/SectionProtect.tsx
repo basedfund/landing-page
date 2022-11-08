@@ -1,13 +1,18 @@
 import React from 'react';
-import { Box, Button, Grid, Typography } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography } from '@mui/material';
 import SvgDAI from '../../../assets/images/DAI.svg';
 import SvgSparkle from '../../../assets/images/Sparkle.svg';
 import RightArrow from '../../../components/svg/RightArrow';
 import styles from './SectionProtect.module.css';
+import { URL_VIEW_ALL_VAULTS } from '../../../api';
 
 export function SectionProtect() {
+  const goToViewAllVaults = () => {
+    window.open(URL_VIEW_ALL_VAULTS, '_blank');    
+  }
+
   return (
-    <Box>
+    <Box className={styles.root} id='section-invest'>
       <Box className={styles.headerContainer}>
         <Box className={styles.titleBox}>
           <Typography className={styles.title} variant='h2' color='text.primary'>
@@ -18,7 +23,7 @@ export function SectionProtect() {
         <Typography variant='body2' color='secondary.main'>
           Deposit stablecoins and protect against possible depeg events by sharing risks across a basket of depositors.
         </Typography>
-        <Button className={styles.buttonViewVaults} variant='text' endIcon={<RightArrow />}>View all our vaults</Button>
+        <Button className={styles.buttonViewVaults} variant='text' onClick={goToViewAllVaults} endIcon={<RightArrow />}>View all our vaults</Button>
       </Box>
 
       <Box className={styles.protectDai}>
@@ -47,7 +52,7 @@ export function SectionProtect() {
                 <Typography className={styles.alterText} variant='body2'>
                   Protect your DAI &nbsp; 0.00
                 </Typography>
-                <Button className={styles.protectButton} variant='contained'>
+                <Button className={styles.protectButton} variant='contained' onClick={goToViewAllVaults}>
                   PROTECT
                 </Button>
               </Box>

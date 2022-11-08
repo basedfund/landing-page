@@ -1,11 +1,12 @@
 .root {
   justify-content: space-between;
-  margin: 20px 0px 20px 30px;
+  padding: 20px 0px 20px 30px;
   position: fixed;
+  background-color: #2C3242;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .shortButton {
@@ -27,7 +28,7 @@
 
 @media (max-width: 1025px) {
   .root {
-    margin: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 10px;
   }
   .rightGroup {
     margin-right: 20px;

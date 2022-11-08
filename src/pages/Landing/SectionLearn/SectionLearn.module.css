@@ -6,7 +6,6 @@
   height: 550px;
   position: relative;
   background-color: #3D4559;
-  z-index: -1;
   overflow: hidden;
 }
 

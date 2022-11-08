@@ -1,3 +1,3 @@
 export * from './Header/Header';
-export * from './Landing';
+export * from './Landing/Landing';
 export * from './Footer/Footer';

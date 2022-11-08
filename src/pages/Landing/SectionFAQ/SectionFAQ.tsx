@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Stack, Typography } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Box, Stack, Typography } from '@mui/material';
 import { getFAQs } from '../../../api';
 import SvgPlus from '../../../assets/images/plus.svg';
+import SvgMinus from '../../../assets/images/minus.svg';
 import SvgOval from '../../../assets/images/Oval.svg';
 import styles from './SectionFAQ.module.css';
 
 export function SectionFAQ() {
   const [faqs, setFaqs] = useState<{ question: string, answer: string }[]>([]);
+  const [expandedId, setExpandedId] = useState(-1);
 
   useEffect(() => {
     setFaqs(getFAQs());
   }, []);
 
   return (
-    <Box className={styles.root}>
+    <Box className={styles.root} id='section-faq'>
       <Box className={styles.title}>
         <Typography variant='h2' color='text.primary'>
           Frequently asked questions
@@ -25,12 +27,30 @@ export function SectionFAQ() {
       </Typography>
       <Box className={styles.faqList}>
         {faqs.map((faq, id) => (
-          <Stack className={styles.faqRow} key={id} direction='row'>
-            <Typography className={styles.question} variant='body2' color='text.primary'>
-              {faq.question}
-            </Typography>
-            <img src={SvgPlus} />
-          </Stack>
+          <Accordion className={styles.faqAccordion} expanded={expandedId === id} key={id} sx={{bgcolor: 'transparent'}}>
+            <AccordionSummary className={styles.faqQuestion}
+              expandIcon={expandedId === id ? <img src={SvgMinus} /> : <img src={SvgPlus} />}
+              onClick={(event) => {
+                setExpandedId(expandedId === id ? -1 : id);
+                event.stopPropagation();
+              }}
+            >
+              <Typography className={styles.question} variant='body2' color='text.primary'>
+                {faq.question}
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails className={styles.faqAnswer}>
+              <Typography className={styles.answer} variant='body1' color='text.primary'>
+                {faq.answer}
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          // <Stack className={styles.faqRow} key={id} direction='row'>
+          //   <Typography className={styles.question} variant='body2' color='text.primary'>
+          //     {faq.question}
+          //   </Typography>
+          //   <img src={SvgPlus} />
+          // </Stack>
         ))}
       </Box>
     </Box>

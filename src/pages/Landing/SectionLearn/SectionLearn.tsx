@@ -4,8 +4,17 @@ import SvgCurve3 from '../../../assets/images/curve3.svg';
 import SvgMaskGroup from '../../../assets/images/MaskGroup.svg';
 import RightArrow from '../../../components/svg/RightArrow';
 import styles from './SectionLearn.module.css';
+import { URL_TUTORIALS, URL_KEY_CONCEPTS } from '../../../api';
 
 export function SectionLearn() {
+  const goToLearnMore = () => {
+    window.open(URL_TUTORIALS, '_blank');
+  }
+
+  const goToViewVaults = () => {
+    window.open(URL_KEY_CONCEPTS, '_blank');
+  }
+
   return (
     <Box className={styles.root}>
       <img className={styles.bgImg} src={SvgMaskGroup} />
@@ -25,6 +34,7 @@ export function SectionLearn() {
         <Button
           className={styles.learnButton}
           variant='contained'
+          onClick={goToLearnMore}
           endIcon={<RightArrow />}
         >
           Tutorials
@@ -32,6 +42,7 @@ export function SectionLearn() {
         <Button
           className={styles.learnButton}
           variant='contained'
+          onClick={goToViewVaults}
           endIcon={<RightArrow />}
         >
           Key concepts
