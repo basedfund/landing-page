@@ -45,12 +45,6 @@ export function SectionFAQ() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          // <Stack className={styles.faqRow} key={id} direction='row'>
-          //   <Typography className={styles.question} variant='body2' color='text.primary'>
-          //     {faq.question}
-          //   </Typography>
-          //   <img src={SvgPlus} />
-          // </Stack>
         ))}
       </Box>
     </Box>
