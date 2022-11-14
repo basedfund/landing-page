@@ -26,7 +26,7 @@ export function SectionProtect() {
         <Button className={styles.buttonViewVaults} variant='text' onClick={goToViewAllVaults} endIcon={<RightArrow />}>View all our vaults</Button>
       </Box>
 
-      <Box className={styles.protectDai}>
+      {/* <Box className={styles.protectDai}>
         <Box className={styles.daiIcon}>
           <img className={styles.daiIconImg} src={SvgDAI}/>
         </Box>
@@ -59,7 +59,7 @@ export function SectionProtect() {
             </Box>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
