@@ -2,11 +2,12 @@ import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import RightArrow from '../../../components/svg/RightArrow';
 import styles from './SectionAddVault.module.css';
-import { URL_ADD_VAULT } from '../../../api';
+import { MAILTO_ADD_VAULT } from '../../../api';
 
 export function SectionAddVault() {
-  const goToAddVault = () => {
-    window.open(URL_ADD_VAULT, '_blank');
+  const goToAddVault = (e: any) => {
+    window.location.href = MAILTO_ADD_VAULT;
+    e.preventDefault();
   }
 
   return (
