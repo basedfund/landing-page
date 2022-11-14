@@ -77,6 +77,16 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  .title {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 768px) {
