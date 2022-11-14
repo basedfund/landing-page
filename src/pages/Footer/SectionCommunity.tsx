@@ -1,9 +1,22 @@
-import React from 'react';
-import { Box, Button, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Button, FormControl, TextField, Typography } from '@mui/material';
+import axios from 'axios';
 import SvgCurve4 from '../../assets/images/curve4.svg';
 import styles from './Footer.module.css';
 
 export function SectionCommunity() {
+  const [emailAddress, setEmailAddress] = useState('');
+
+  const submitEmailAddress = async () => {
+    axios.post('https://formspree.io/f/mbjbrplr', {
+      email: emailAddress
+    }).then(function (response) {
+      console.log({ response });
+    }).catch(function (error) {
+      console.log({ error });
+    });
+  }
+
   return (
     <Box className={styles.communityContainer}>
       <Typography className={styles.title} variant='h4' color='text.primary'>
@@ -19,14 +32,11 @@ export function SectionCommunity() {
         Connect with us to get all the updated on the email which you will put.
       </Typography>
 
-      <Box className={styles.inputField}>
-        <Typography className={styles.alterText} variant='body2'>
-          Enter your email address
-        </Typography>
-        <Button className={styles.submitButton} variant='contained'>
-          Submit
-        </Button>
-      </Box>
+      <form className={styles.inputField} action="https://formspree.io/f/mbjbrplr" method="POST">
+        <input className={styles.emailInput} type="email" name="email" placeholder="Enter your email address" />
+        <button className={styles.submitButton} type="submit">Submit</button>
+      </form>
+      
       <Typography className={styles.joinSentence} variant='body1'>
         Join others in learning how to protect your cyrpto assets
       </Typography>
