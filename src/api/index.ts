@@ -13,21 +13,21 @@ export function getSafeCnt() {
 }
 
 export const URL_LEARN_MORE = 'https://bedrock.mock/LEARN_MORE';
-export const URL_VIEW_VAULTS = 'https://bedrock.mock/VIEW_VAULTS';
-export const URL_VIEW_ALL_VAULTS = 'https://bedrock.mock/VIEW_ALL_VAULTS';
-export const MAILTO_ADD_VAULT = 'mailto:info@bedrockprotocol.xyz';
-export const URL_TUTORIALS = 'https://bedrock-protocol.gitbook.io/bedrock-protocol-documentation/';
-export const URL_KEY_CONCEPTS = 'https://bedrock-protocol.gitbook.io/bedrock-protocol-documentation/basic-concepts';
+export const URL_VIEW_VAULTS = 'https://ji67t977vhu.typeform.com/to/zFRTs4dR';
+export const URL_VIEW_ALL_VAULTS = 'https://ji67t977vhu.typeform.com/to/zFRTs4dR';
+export const URL_ADD_VAULT = 'https://bedrock.mock/ADD_VAULT';
+export const URL_TUTORIALS = 'https://bedrock-protocol.gitbook.io/bedrock-protocol-documentation/basic-concepts/safes';
+export const URL_KEY_CONCEPTS = 'https://bedrock-protocol.gitbook.io/bedrock-protocol-documentation/';
 export const URL_PRIVACY_POLICY = 'https://bedrock.mock/PRIVACY_POLICY';
 export const URL_TERMS_AND_CONDITIONS = 'https://bedrock.mock/TERMS_AND_CONDITIONS';
 export const URL_CONTACT = 'https://bedrock.mock/CONTACT';
-export const URL_DEFI_LLAMA = 'https://bedrock.mock/DEFI_LLAMA';
-export const URL_GITHUB = 'https://bedrock.mock/GITHUB';
+export const URL_DEFI_LLAMA = '#';
+export const URL_GITHUB = 'https://github.com/basedfund/bedrock';
 export const URL_INVEST_IN_BEDROCK = 'https://bedrock.mock/INVEST_IN_BEDROCK';
-export const URL_INSTAGRAM = 'https://bedrock.mock/INSTAGRAM';
-export const URL_TWITCH = 'https://bedrock.mock/TWITCH';
-export const URL_TWITTER = 'https://bedrock.mock/TWITTER';
+export const URL_INSTAGRAM = '#';
+export const URL_TWITCH = '#';
+export const URL_TWITTER = 'https://twitter.com/bedrockprotocol';
 export const URL_BLOG = 'https://bedrock.mock/BLOG';
 export const URL_FAQS = 'https://bedrock.mock/FAQS';
-export const URL_KNOWLEDGE_CENTER = 'https://bedrock.mock/KNOWLEDGE_CENTER';
+export const URL_KNOWLEDGE_CENTER = 'https://bedrock-protocol.gitbook.io/bedrock-protocol-documentation/';
 export const URL_MANAGE_SETTINGS = 'https://bedrock.mock/MANAGE_SETTINGS';
