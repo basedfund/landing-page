@@ -15,7 +15,7 @@ export function getSafeCnt() {
 export const URL_LEARN_MORE = 'https://bedrock.mock/LEARN_MORE';
 export const URL_VIEW_VAULTS = 'https://ji67t977vhu.typeform.com/to/zFRTs4dR';
 export const URL_VIEW_ALL_VAULTS = 'https://ji67t977vhu.typeform.com/to/zFRTs4dR';
-export const URL_ADD_VAULT = 'https://bedrock.mock/ADD_VAULT';
+export const MAILTO_ADD_VAULT = 'mailto:info@bedrockprotocol.xyz';
 export const URL_TUTORIALS = 'https://bedrock-protocol.gitbook.io/bedrock-protocol-documentation/basic-concepts/safes';
 export const URL_KEY_CONCEPTS = 'https://bedrock-protocol.gitbook.io/bedrock-protocol-documentation/';
 export const URL_PRIVACY_POLICY = 'https://bedrock.mock/PRIVACY_POLICY';
