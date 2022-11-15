@@ -22,7 +22,7 @@ export function SectionLinks() {
             <Grid item xs={4}>
               <Typography className={styles.groupName} variant='h5'>Legal</Typography>
               <Link href={URL_PRIVACY_POLICY}>
-                <Typography className={styles.link} variant='body1'>Privecy Policy</Typography>
+                <Typography className={styles.link} variant='body1'>Privacy Policy</Typography>
               </Link>
               <Link href={URL_TERMS_AND_CONDITIONS}>
                 <Typography className={styles.link} variant='body1'>Terms & Conditions</Typography>
@@ -33,9 +33,10 @@ export function SectionLinks() {
             </Grid>
             <Grid item xs={4}>
               <Typography className={styles.groupName} variant='h5'>Data</Typography>
-              <Link href={URL_DEFI_LLAMA}>
-                <Typography className={styles.link} variant='body1'>Defi llama</Typography>
-              </Link>
+              {/* <Link href={URL_DEFI_LLAMA}>
+                 <Typography className={styles.link} variant='body1'>Defi llama</Typography>
+               </Link>
+               */}
               <Link href={URL_GITHUB}>
                 <Typography className={styles.link} variant='body1'>Github</Typography>
               </Link>
@@ -73,11 +74,11 @@ export function SectionLinks() {
         <Typography className={styles.copyRight} variant='subtitle1'>
           Copyright © 2023 based inc
         </Typography>
-        <Link href={URL_MANAGE_SETTINGS}>
+        {/*<Link href={URL_MANAGE_SETTINGS}>
           <Typography className={styles.manageSettings} variant='subtitle1'>
             Manage settings
           </Typography>
-        </Link>
+        </Link>*/}
       </Box>
     </Box>
   );
